@@ -1,6 +1,6 @@
 # Writing the initial class
-class fruit():
-    def __init__(self,name,color,sizecategory):
+class fruit:
+    def __init__(self, name, color, sizecategory):
         self.name = name
         self.color = color
         self.sizecategory = sizecategory
