@@ -9,4 +9,6 @@ def setup():
 def test_get_fruit_name(setup):
     assert setup.get_fruit_name() == "Apple"
 
+def test_get_fruit_color(setup):
+    assert setup.get_fruit_color() == "Green"
 
