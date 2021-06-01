@@ -6,7 +6,7 @@ class calculator():
         pass
 
     def add(self,a, b):
-        result = a + b
+        result = a + a
         return result
 
     def subtract(self, a, b):
