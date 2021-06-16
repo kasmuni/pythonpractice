@@ -22,6 +22,8 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
 
+# class methods are used to make a method about class itself - unrelated to the INSTANCE of a class
+# Therefore this method receives 'cls' (class) as first parameter not the self
     @classmethod
     def set_raise_amt(cls, amount):
         cls.raise_amt = amount
@@ -39,3 +41,11 @@ class Employee:
         if day.weekday() == 5 or day.weekday() == 6:
             return False
         return True
+
+    # Used to create documentation for devs to give more meaningfull printing of class instance details
+    def __repr__(self):
+        return "Employee('{}', '{}', {})".format(self.first, self.last, self.pay)
+
+    # used more fore end user for layman terms details of class
+    def __str__(self):
+        return '{} - {}'.format(self.fullname(), self.email)

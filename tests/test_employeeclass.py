@@ -47,3 +47,9 @@ def test_isworkday(emp_1):
 
     assert emp_1.isworkday(mydate1) == False
     assert emp_1.isworkday(mydate2) == True
+
+def test_rep_dunder(emp_1):
+    assert emp_1.__repr__() == "Employee('James', 'Anderson', 50000)"
+
+def test_str_dunder(emp_1):
+    assert emp_1.__str__() == "James Anderson - James.Anderson@company.com"
