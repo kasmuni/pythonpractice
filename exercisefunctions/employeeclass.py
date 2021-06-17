@@ -15,6 +15,7 @@ class Employee:
         Employee.num_of_emps += 1
 
     # returns fullname of the employee
+
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
@@ -49,3 +50,5 @@ class Employee:
     # used more fore end user for layman terms details of class
     def __str__(self):
         return '{} - {}'.format(self.fullname(), self.email)
+
+
